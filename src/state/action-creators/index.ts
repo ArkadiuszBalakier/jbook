@@ -8,7 +8,7 @@ import {
 } from "../actions";
 import { CellTypes } from "../cell";
 
-export const UpdateCell = (id: string, content: string): UpdateCellAction => {
+export const updateCell = (id: string, content: string): UpdateCellAction => {
   return {
     type: ActionType.UPDATE_CELL,
     payload: {
@@ -36,7 +36,7 @@ export const moveCell = (id: string, direction: Direction): MoveCellAction => {
 };
 
 export const insertCellBefore = (
-  id: string,
+  id: string | null,
   cellType: CellTypes
 ): InsertCellBeforeAction => {
   return {

@@ -1,4 +1,5 @@
 import "bulmaswatch/superhero/bulmaswatch.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import * as ReactDOMClient from "react-dom/client";
 // import CodeCell from "./components/code-cell";
 import { Provider } from "react-redux";
