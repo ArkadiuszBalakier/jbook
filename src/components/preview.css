@@ -25,3 +25,7 @@
   left: 0;
   opacity: 0;
 }
+
+.react-draggable-transparent-selection .preview-wrapper {
+  pointer-events: none;
+}
