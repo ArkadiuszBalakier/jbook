@@ -60,3 +60,46 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
 };
 
 export default Resizable;
+// import "./resizable.css";
+// import { ResizableBox } from "react-resizable";
+// import { useEffect, useState } from "react";
+
+// interface ResizableProps {
+//   direction: "horizontal" | "vertical";
+//   children?: React.ReactNode;
+// }
+
+// const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
+//   const getWindowDimensions = () => {
+//     const { innerWidth: width, innerHeight: height } = window;
+//     return {
+//       width,
+//       height,
+//     };
+//   };
+
+//   useEffect(() => {
+//     const onResize = () => {
+//       setWindowDimensions(getWindowDimensions());
+//     };
+//     window.addEventListener("resize", onResize);
+//     return () => window.removeEventListener("resize", onResize);
+//   }, []);
+//   const [windowDimensions, setWindowDimensions] = useState(
+//     getWindowDimensions()
+//   );
+
+//   return (
+//     <ResizableBox
+//       minConstraints={[Infinity, windowDimensions.height * 0.1]}
+//       maxConstraints={[Infinity, windowDimensions.height * 0.9]}
+//       height={windowDimensions.height * 0.5}
+//       width={Infinity}
+//       resizeHandles={["s"]}
+//       handleSize={[10, 10]}
+//     >
+//       {children}
+//     </ResizableBox>
+//   );
+// };
+// export default Resizable;
