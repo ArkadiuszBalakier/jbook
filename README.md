@@ -1,5 +1,6 @@
 #JBOOK
 Web app similar to codepen, you can add code cell or text cell
+project created with the help of the course https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project, I'm putting it here as a Github training.
 
 # Getting Started with Create React App
 
